@@ -191,6 +191,7 @@ import { NotificationsComponent } from './client/modal/notificationpage/notifica
       useClass: AuthInterceptor,
       multi: true
     }
+    
   ],
   bootstrap: [AppComponent]
 })
