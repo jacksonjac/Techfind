@@ -8,9 +8,7 @@ export default (dependencies: any) => {
          TechlistController,blockTechcontroller,
          UnblockTechcontroller,AddDesignationController,AddQuestionCtrl,UpdatequestionCtrl,DeleteQuestionCtrl,
          UpdateDesiController,ApproveTechController,RefuseTechController,DeleteDesignationController,getOneQuestionByIdCtrl,getAdminDashboardCtrl} = AdminControllers(dependencies);
-                 
 
-  console.log("Admin Router")
   const router = express.Router();
 
   router.put('/blockuser', blockUsercontroller); 

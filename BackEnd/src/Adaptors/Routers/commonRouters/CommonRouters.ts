@@ -25,7 +25,7 @@ export default (dependencies: any) => {
   
   const router = express.Router();
 
-    console.log("Common Router")
+
   router.get("/AllDesignation",getDesignationCtrl)
   router.get("/AllQuestions",getAllQuestions)
   router.put("/QDesi-id",getQuestionbyIdCtrl)

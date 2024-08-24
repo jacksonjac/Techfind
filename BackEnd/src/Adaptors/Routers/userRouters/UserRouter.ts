@@ -13,7 +13,7 @@ export default (dependencies: any) => {
            getBookigbyUseridCtrl,UserProfileUploadController,AddNewCommentCtrl
                  } = UserControllers(dependencies);
 
-   console.log("userRouterpage")
+
   const router = express.Router();
 
   router.post("/newUser", RegisterUserController);

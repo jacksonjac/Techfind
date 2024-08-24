@@ -3,8 +3,8 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import dotenv from "dotenv";
 dotenv.config();
-const secretKey = "your-256-bit-secret";
-console.log(process.env.SECRET_KEY);
+const secretKey = process.env.JWT_SECRET || 'Jwtsecreatkey';
+
 
 export const loginNewUser = (dependencies: any) => {
   const { loginNewUserRepo } = dependencies.repositery;

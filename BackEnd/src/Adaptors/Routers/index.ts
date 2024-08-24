@@ -8,7 +8,7 @@ import CommonRouters from "./commonRouters/CommonRouters";
 export const routes = (dependencies: any) => {
   const routes = express.Router();
 
-  console.log("router index page");
+  
 
   routes.use("/user", UserRouter(dependencies));
   routes.use("/technician",technicianRouter(dependencies))

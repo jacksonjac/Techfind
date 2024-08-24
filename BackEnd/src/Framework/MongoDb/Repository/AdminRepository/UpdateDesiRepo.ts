@@ -9,12 +9,12 @@ export default {
 
         try {
             // Log the current questions to check if the ID exists
-            const questionExists = await Designation.findById(designationId);
-            if (!questionExists) {
-                console.error("Question not found");
-                return { status: false, message: "Question not found" };
+            const DesignationExists = await Designation.findById(designationId);
+            if (DesignationExists) {
+                console.error("Designation is  not found");
+                return { status: false, message: "Designation not found" };
             }
-            console.log("Question exists before update:", questionExists);
+           
 
             // Find the question by questionId and update specified fields
             const updatedQuestion = await Designation.findByIdAndUpdate(
